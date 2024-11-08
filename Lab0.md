@@ -14,3 +14,7 @@ Mình ***lần đầu tiên*** sử dụng markdown
 #### Diagram 1
 
 ![Diagram1](https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3bToJc9niO97QMvYda8rbuA2RbvYRggLGd19KMPUEeYVc0xaPkQL0DaAgOab6feWHd5EQce1a5dB1JKWkAGq9JMlH26reYGrBmN5m6A8b6SAt1YGI2L4DqIThgw2SsAHbK9-ULunbmFG093BkBW00000__y30000)
+
+#### Diagram 2
+
+![Diagram2](https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3bS1aCvCpYn8p2jHyCuul30vm-FmWhnq577dXxlN9c8AUsVaGmIva3GgwDeXgRTIE3BXuQxj9GePO8K82P0oc7uh1U_CXxkRSnLAYX8X2XLA7kwUdAUGdP7F1LEae8jciFFXpLXC1HiBTuoLGWIGhP2NyN3NsZo58nEFBSo3wd58pKi1UXy0003__mC0)
