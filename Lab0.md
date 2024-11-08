@@ -9,7 +9,7 @@ Mình ***lần đầu tiên*** sử dụng markdown
 > - In nghiêng: *Dòng chữ này sẽ in nghiêng*
 > - Liên kết về tin tức: [Thời sự](https://vnexpress.net/thoi-su)
 >
->**Giới thiệu về planttext**: PlantUML là một công cụ mạnh mẽ cho phép bạn tạo ra các biểu đồ UML một cách trực quan và hiệu quả bằng cách sử dụng mã văn bản. Với PlantUML, việc thiết kế các sơ đồ phức tạp trở nên đơn giản hơn bao giờ hết, giúp bạn truyền đạt ý tưởng một cách rõ ràng và chính xác.
+>**Giới thiệu về PlantText**: PlantUML là một công cụ mạnh mẽ cho phép bạn tạo ra các biểu đồ UML một cách trực quan và hiệu quả bằng cách sử dụng mã văn bản. Với PlantUML, việc thiết kế các sơ đồ phức tạp trở nên đơn giản hơn bao giờ hết, giúp bạn truyền đạt ý tưởng một cách rõ ràng và chính xác.
 >
 ### Ba Diagram
 
