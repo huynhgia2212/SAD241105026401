@@ -11,14 +11,14 @@ Mình ***lần đầu tiên*** sử dụng markdown
 
 ### Ba Diagram
 
-#### Diagram về lớp
+#### Diagram về lớp (Sinh viên)
 
 ![Diagram1](https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3bToJc9niO97QMvYda8rbuA2RbvYRggLGd19KMPUEeYVc0xaPkQL0DaAgOab6feWHd5EQce1a5dB1JKWkAGq9JMlH26reYGrBmN5m6A8b6SAt1YGI2L4DqIThgw2SsAHbK9-ULunbmFG093BkBW00000__y30000)
 
-#### Diagram về ca sử dụng
+#### Diagram về ca sử dụng (Khách hàng với hàng hóa)
 
 ![Diagram2](https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3bS1aCvCpYn8p2jHyCuul30vm-FmWhnq577dXxlN9c8AUsVaGmIva3GgwDeXgRTIE3BXuQxj9GePO8K82P0oc7uh1U_CXxkRSnLAYX8X2XLA7kwUdAUGdP7F1LEae8jciFFXpLXC1HiBTuoLGWIGhP2NyN3NsZo58nEFBSo3wd58pKi1UXy0003__mC0)
 
-#### Diagram về gói(
+#### Diagram về gói (Quản lí thư viện)
 
 ![Diagram3](https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3bT1Od9sOdggGaZ6iGrXcGztj-SfL7CfAC24_TAFRNYuUswco-6TUUbW6GM5v9p4ucA5uCoyZB3Cr3ma8VVCXxiMvwM7PHvU1HAkHJ8dvF22J1-GyQMeXXnUc9o1n0zvk6jXWNF6uRLesWDBGIRx7DwBejiNvBR5UI55G4baGp8UxfwOb-vzU1NOb5ekBbHVwEeYEySAPWmNaY1G2S9AAoXR8UVmNYw7rBmKOBW10000__y30000)
