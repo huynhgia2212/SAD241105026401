@@ -12,7 +12,7 @@
 
 **1.3 Ý nghĩa từng thành phần trong kiến trúc**
 
-**Lớp Trình bày (Presentation Layer)**
+#### **Lớp Trình bày (Presentation Layer)**
 - **Chức năng**: Giao tiếp trực tiếp với người dùng thông qua giao diện đồ họa (GUI).
 - **Thành phần**: Các form, control, menu, các thành phần trực quan khác.
 - **Vai trò**:
@@ -21,20 +21,20 @@
 - Kiểm tra tính hợp lệ của dữ liệu đầu vào.
 
 - **Ví dụ**: Các form nhập liệu thông tin nhân viên, bảng lương, các biểu đồ thống kê.
-2. Lớp Nghiệp vụ (Business Logic Layer)
-Chức năng: Chứa các quy tắc kinh doanh, logic xử lý của hệ thống.
-Thành phần: Các lớp, interface, các hàm thực hiện các nghiệp vụ.
-Vai trò:
-Xử lý các yêu cầu từ lớp trình bày.
-Truy xuất dữ liệu từ lớp dữ liệu.
-Thực hiện các tính toán, so sánh, kiểm tra theo quy tắc kinh doanh.
-Trả về kết quả cho lớp trình bày.
-Ví dụ: Tính lương, tính hoa hồng, kiểm tra quyền truy cập, in báo cáo.
-3. Lớp Dữ liệu (Data Access Layer)
-Chức năng: Truy cập và quản lý dữ liệu trong cơ sở dữ liệu.
-Thành phần: Các lớp truy cập cơ sở dữ liệu, các câu lệnh SQL.
-Vai trò:
-Kết nối với cơ sở dữ liệu.
-Thực hiện các câu lệnh SQL để đọc, ghi, cập nhật, xóa dữ liệu.
-Trả về kết quả truy vấn cho lớp nghiệp vụ.
-Ví dụ: Truy vấn thông tin nhân viên, cập nhật thông tin lương, xóa một bản ghi.
+#### **Lớp Nghiệp vụ (Business Logic Layer)**
+- **Chức năng**: Chứa các quy tắc kinh doanh, logic xử lý của hệ thống.
+- **Thành phần**: Các lớp, interface, các hàm thực hiện các nghiệp vụ.
+- **Vai trò**:
+- Xử lý các yêu cầu từ lớp trình bày.
+- Truy xuất dữ liệu từ lớp dữ liệu.
+- Thực hiện các tính toán, so sánh, kiểm tra theo quy tắc kinh doanh.
+- Trả về kết quả cho lớp trình bày.
+- **Ví dụ**: Tính lương, tính hoa hồng, kiểm tra quyền truy cập, in báo cáo.
+#### **Lớp Dữ liệu (Data Access Layer)**
+- **Chức năng**: Truy cập và quản lý dữ liệu trong cơ sở dữ liệu.
+- **Thành phần**: Các lớp truy cập cơ sở dữ liệu, các câu lệnh SQL.
+- **Vai trò**:
+- Kết nối với cơ sở dữ liệu.
+- Thực hiện các câu lệnh SQL để đọc, ghi, cập nhật, xóa dữ liệu.
+- Trả về kết quả truy vấn cho lớp nghiệp vụ.
+- **Ví dụ**: Truy vấn thông tin nhân viên, cập nhật thông tin lương, xóa một bản ghi.
