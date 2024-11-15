@@ -42,3 +42,6 @@
   **1.4 Vẽ biểu đồ package mô tả kiến trúc**
   
   ![Diagram](https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3bT1Od9sOdggWb90KMfnQbv9OabcVfw2Js9bQf6IGZMN0X0avoGM5okuXteYyKABKuiyyqfIYz8IarEvQhaGvZYL5cVcfGAL-EIdPoPZCmcc0gm0IJmujQWi4yqqbyIIH0N7v6ImWPX6WQGXicY2IOd5O8E0hbRGrRL3inE51vP7CeZB8JKl1HWq00000F__0m00)
+
+  #### **2. Đề xuất cơ chế**
+  
