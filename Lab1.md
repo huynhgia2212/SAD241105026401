@@ -46,34 +46,54 @@
   #### **2. Đề xuất cơ chế**
 
   **2.1 Các Cơ Chế Cần Giải Quyết và Lý Do:**
+  
 Để xây dựng một hệ thống lương đáp ứng đầy đủ các yêu cầu trên, cần phải thiết kế và triển khai các cơ chế sau:
 
 **1. Cơ chế Xác thực và Ủy quyền:**
+
 **Lý do:** Đảm bảo chỉ những người có quyền hạn mới được truy cập và thực hiện các thao tác trên hệ thống.
+
 **Giải pháp:** Sử dụng cơ chế đăng nhập bằng tên tài khoản và mật khẩu, phân quyền truy cập dựa trên vai trò của người dùng (nhân viên, quản lý, kế toán,...).
 
 **2. Cơ chế Quản lý Dữ liệu Nhân Viên:**
+
 **Lý do:** Lưu trữ và quản lý thông tin chi tiết của từng nhân viên (họ tên, mã nhân viên, thông tin lương, thông tin liên lạc,...).
+
 **Giải pháp:** Sử dụng cơ sở dữ liệu quan hệ để lưu trữ thông tin nhân viên, thiết kế các bảng và mối quan hệ phù hợp.
 
 **3. Cơ chế Quản Lý Chấm Công:**
+
 **Lý do:** Thu thập và lưu trữ thông tin về giờ làm việc của nhân viên, tính toán số giờ làm việc thực tế.
+
 **Giải pháp:** Cho phép nhân viên tự nhập liệu giờ làm việc hoặc tích hợp với hệ thống chấm công tự động.
 
 **4. Cơ chế Tính Lương:**
+
 **Lý do:** Tính toán lương dựa trên các quy tắc phức tạp (lương cơ bản, phụ cấp, thưởng, thuế,...).
+
 **Giải pháp:** Xây dựng các thuật toán tính lương linh hoạt, có thể tùy chỉnh theo từng loại hợp đồng lao động.
 
 **5. Cơ chế Báo Cáo:**
+
 **Lý do:** Cung cấp các báo cáo chi tiết về tình hình chi tiêu,...
+
 **Giải pháp:** Xây dựng các báo cáo cho phép người dùng tùy chỉnh theo nhu cầu.
-7. Cơ chế Tích Hợp với Hệ Thống Khác:
-Lý do: Tích hợp với hệ thống quản lý dự án hiện có để truy xuất thông tin về dự án và mã phí.
-Giải pháp: Sử dụng các công nghệ tích hợp dữ liệu như ODBC, JDBC để kết nối với cơ sở dữ liệu DB2.
-8. Cơ chế Bảo Mật:
-Lý do: Bảo vệ thông tin nhạy cảm của nhân viên như thông tin lương, thông tin cá nhân.
-Giải pháp: Mã hóa dữ liệu, kiểm soát quyền truy cập, tạo nhật ký hoạt động.
-9. Cơ chế Lưu Trữ:
-Lý do: Lưu trữ dữ liệu một cách hiệu quả, đảm bảo tính sẵn sàng của dữ liệu.
-Giải pháp: Sử dụng cơ sở dữ liệu quan hệ để lưu trữ dữ liệu, sao lưu dữ liệu định kỳ.
+
+**7. Cơ chế Tích Hợp với Hệ Thống Khác:**
+
+**Lý do:** Tích hợp với hệ thống quản lý dự án hiện có để truy xuất thông tin về chi tiêu.
+
+**Giải pháp:** Sử dụng các ứng dụng tích hợp dữ liệu như ODBC, JDBC để kết nối với cơ sở dữ liệu.
+
+**8. Cơ chế Bảo Mật:**
+
+**Lý do:** Bảo vệ thông tin của nhân viên như thông tin lương, thông tin cá nhân.
+
+**Giải pháp:** Mã hóa dữ liệu, kiểm soát quyền truy cập, tạo nhật ký hoạt động.
+
+**9. Cơ chế Lưu Trữ:**
+
+**Lý do:** Lưu trữ dữ liệu một cách hiệu quả, đảm bảo tính sẵn sàng của dữ liệu.
+
+**Giải pháp:** Sử dụng cơ sở dữ liệu quan hệ để lưu trữ dữ liệu, sao lưu dữ liệu định kỳ.
   
