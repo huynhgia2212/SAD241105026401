@@ -129,3 +129,57 @@ Dựa trên ca sử dụng Payment, ta có thể xác định các lớp phân t
   ![Diagram](https://www.planttext.com/api/plantuml/png/T54n3i8m3Dpp2giZ4WDh9oHc15-m4akDr2HLx0m8yJ86diGNSDkK8X1BpfRlpfVaUN_iMJ1B2RsnFJB3eR2aG1ck1i0xFI86Kg20lbT4vp8nQvMoeypcPghqd9ChLdwKG_PsH4Tiin_4fxYAJgF9Ah5r_IIRxCPD0ru2HT5Aqqhvt3bFLWCCgKpCgZcITCdzLyxphynAUhz3isjWkuLcqzIiBNJ8Pgu_XiljMx0f2lhupL5OqiuMI_TBgA5QA4nip9wYqnzw0G00__y30000)
 
   **Biểu đồ lớp trên đã mô tả các lớp, thuộc tính và quan hệ giữa các lớp trong hệ thống thanh toán.**
+
+  #### Phân tích ca sử dụng Maintain Timecard
+Dựa trên ca sử dụng Maintain Timecard, ta có thể xác định các lớp phân tích sau:
+
+**Employee:** Đại diện cho nhân viên, lưu trữ thông tin cá nhân.
+
+**Timecard:** Đại diện cho thẻ chấm công, lưu trữ thông tin về giờ làm việc, ngày làm việc.
+
+**Department:** Đại diện cho phòng ban, lưu trữ thông tin về phòng ban.
+
+**Project:** Đại diện cho dự án, lưu trữ thông tin về dự án.
+
+**Role:** Đại diện cho vai trò của người dùng (nhân viên, quản lý).
+
+#### Mô Tả Hành Vi Thông Qua Biểu Đồ Sequence
+
+![Diagram](https://www.planttext.com/api/plantuml/png/V91D3W8X38Ntd88BU04MPZQUG3r00vsa2J08nOIpkV18Nc767p0OughDb_TUN_gutQV443axAy8sILC0p_BWWbqAOWTFv513D1qybiJeXAWEkTj_c98HBnaJDz-RFnKLAJcJDqrGbpw4S_I3Z7fHIKCfM2XDCooJWm76lrr-9ACs2QwZZ6yNlVYPeZk_eeIOq9ljkIi0003__mC0)
+
+ #### Xác Định Nhiệm Vụ Của Từng Lớp
+ 
+- **Employee:** Xem, cập nhật thông tin thẻ chấm công của mình.
+- **Timecard:** Lưu trữ thông tin về giờ làm việc, ngày làm việc, liên kết với nhân viên và dự án.
+- **Department**: Lưu trữ thông tin về phòng ban.
+- **Project:** Lưu trữ thông tin về dự án.
+- **Role:** Xác định quyền truy cập của người dùng vào hệ thống.
+
+ #### Xác Định Thuộc Tính Và Quan Hệ Giữa Các Lớp
+
+ ![Diagram](https://www.planttext.com/api/plantuml/png/X90z3i8m38NtdCBAYDI1jLC7s1bwWT1O9IW_LUCE274o1ex45N15caPqO8cT-7lFTjxFLnD9ZJGvApghOeIZ6sou8S9T01ZDXrSEEMWS67JeYIza77Pgr54yH18USdqZnUHPq6qoMDa5cbifceFnCyL9c2XbmnYksD7gS_e-_BJaSjv3xYLK5SYTN9lMS55nYt0ejgZXZ3RuFhP1P6M1Pla_S9cn1fxOz1urWw91h_dRFm000F__0m00)
+
+ **Biểu đồ lớp trên đã mô tả các lớp, thuộc tính và quan hệ giữa các lớp trong hệ thống quản lý thẻ chấm công.**
+
+ ## Hợp nhất kết quả phân tích
+#### Ta có biểu đồ sau
+
+![Diagram](https://www.planttext.com/api/plantuml/png/T9AnRiGW38PtdW9bh7H3rqmtj6FL3FS25AmxgW0HDiEfwfDrw2Fr5MeA8UXoNMA8Vt-sV_7pzNr4Kf6IcuMU5Q9yTiiShW3oGqXf3N-ySi31mC921vxuGjQ1Lj4WdqCq455yYafuQi8T0ogyKvygQTEkejnJKGxMPrLkbQYUbXZUGTF6cSgFcvOj_Pg7t98w8GK7iP1CqfGtMTIrxiUcKEgcd4fc0oWNqf-orhm0NOBvlxBazzCrkuV7GHuESdWODaj6UL6ubt3eF1xb6yp1d_4KxjBAvWNLo1sgrVIWUyBLuL7oNlRimR2mqBjsKx6JLJfuKjRZZIQJgfjbgFMs5rJJHfcGdumuWZVyK7y1003__mC0)
+
+**Giải Thích biểu đồ:**
+- **Employee:** Giữ vai trò trung tâm, liên kết với cả Timecard và Order, thể hiện việc nhân viên vừa làm việc, vừa có thể thực hiện các giao dịch mua hàng.
+- **Timecard:** Liên quan đến công việc của nhân viên, bao gồm thông tin về giờ làm, dự án.
+- **Order:** Liên quan đến hoạt động mua hàng của nhân viên, bao gồm thông tin về sản phẩm, phương thức thanh toán.
+- **Payment:** Mô tả thông tin về một lần thanh toán, liên kết với Order.
+- **PaymentMethod:** Định nghĩa các phương thức thanh toán khác nhau.
+- **Department:** Lưu trữ thông tin về phòng ban mà nhân viên thuộc về.
+- **Project:** Lưu trữ thông tin về dự án mà nhân viên tham gia.
+
+ ### Các Hành Vi Chính Trong Kết Quả Phân Tích
+ 
+- **Quản lý thông tin nhân viên:** Thêm, sửa, xóa thông tin nhân viên.
+- **Quản lý thẻ chấm công:** Xem, cập nhật, tạo báo cáo về thẻ chấm công.
+- **Quản lý đơn hàng:** Tạo đơn hàng, xem trạng thái đơn hàng, thực hiện thanh toán.
+- **Quản lý sản phẩm:** Quản lý danh sách sản phẩm, cập nhật giá cả.
+- **Quản lý phương thức thanh toán:** Cấu hình các phương thức thanh toán.
+
