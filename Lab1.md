@@ -96,4 +96,14 @@
 **Lý do:** Lưu trữ dữ liệu một cách hiệu quả, đảm bảo tính sẵn sàng của dữ liệu.
 
 **Giải pháp:** Sử dụng cơ sở dữ liệu quan hệ để lưu trữ dữ liệu, sao lưu dữ liệu định kỳ.
+
+#### **3. Phân tích ca sử dụng payment**
+Dựa trên ca sử dụng Payment, ta có thể xác định các lớp phân tích sau:
+
+**Customer:** Đại diện cho khách hàng, lưu trữ thông tin cá nhân, lịch sử giao dịch.
+**Product:** Đại diện cho sản phẩm, lưu trữ thông tin về sản phẩm (tên, giá, số lượng).
+**Order:** Đại diện cho một đơn hàng, lưu trữ thông tin về khách hàng, giao dịch, tổng tiền.
+**Payment:** Đại diện cho một phương thức thanh toán, lưu trữ thông tin về phương thức thanh toán (tiền mặt, thẻ tín dụng, chuyển khoản).
+**PaymentMethod:** Đại diện cho một phương thức thanh toán cụ thể (ví dụ: Thẻ tín dụng).
+**PaymentGateway:** Đại diện cho cổng thanh toán, thực hiện việc xử lý giao dịch thanh toán.
   
