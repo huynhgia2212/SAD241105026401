@@ -101,9 +101,31 @@
 Dựa trên ca sử dụng Payment, ta có thể xác định các lớp phân tích sau:
 
 **Customer:** Đại diện cho khách hàng, lưu trữ thông tin cá nhân, lịch sử giao dịch.
+
 **Product:** Đại diện cho sản phẩm, lưu trữ thông tin về sản phẩm (tên, giá, số lượng).
+
 **Order:** Đại diện cho một đơn hàng, lưu trữ thông tin về khách hàng, giao dịch, tổng tiền.
+
 **Payment:** Đại diện cho một phương thức thanh toán, lưu trữ thông tin về phương thức thanh toán (tiền mặt, thẻ tín dụng, chuyển khoản).
+
 **PaymentMethod:** Đại diện cho một phương thức thanh toán cụ thể (ví dụ: Thẻ tín dụng).
+
 **PaymentGateway:** Đại diện cho cổng thanh toán, thực hiện việc xử lý giao dịch thanh toán.
-  
+
+ #### Mô tả bằng biểu đồ sequence:
+ ![Diagram](https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3bS1aCvCpYn8p2jHS2ujBidFJIr24VGlIa4J2KYip4tDAt5FB4ajJwp49iN51JDAGTSEOeALGd9HAb07n3Wm2P93DSjAeQ0eFpcrk1Xc3geqaWOhXSJIaepyeiogL9WYRCOLfHQNvc0p1kgc0eX444GPt5KmrmCTdP-NbbcK2t4rbqDgNWemq000003__mC0)
+
+ **Xác Định Nhiệm Vụ Của Từng Lớp**
+ 
+- **Customer:** Quản lý thông tin cá nhân, tạo đơn hàng, theo dõi đơn hàng.
+- **Product:** Lưu trữ thông tin sản phẩm, tính giá trị đơn hàng.
+- **Order:** Quản lý thông tin đơn hàng, thực hiện thanh toán, cập nhật trạng thái đơn hàng.
+- **Payment:** Lưu trữ thông tin về phương thức thanh toán, thực hiện các nghiệp vụ liên quan đến thanh toán.
+- **PaymentMethod:** Định nghĩa các phương thức thanh toán cụ thể và các nghiệp vụ liên quan.
+- **PaymentGateway:** Kết nối với các cổng thanh toán thứ ba để xử lý giao dịch.
+
+  #### Xác Định Thuộc Tính Và Quan Hệ Giữa Các Lớp Bằng Biểu Đồ
+
+  ![Diagram](https://www.planttext.com/api/plantuml/png/T54n3i8m3Dpp2giZ4WDh9oHc15-m4akDr2HLx0m8yJ86diGNSDkK8X1BpfRlpfVaUN_iMJ1B2RsnFJB3eR2aG1ck1i0xFI86Kg20lbT4vp8nQvMoeypcPghqd9ChLdwKG_PsH4Tiin_4fxYAJgF9Ah5r_IIRxCPD0ru2HT5Aqqhvt3bFLWCCgKpCgZcITCdzLyxphynAUhz3isjWkuLcqzIiBNJ8Pgu_XiljMx0f2lhupL5OqiuMI_TBgA5QA4nip9wYqnzw0G00__y30000)
+
+  **Biểu đồ lớp trên đã mô tả các lớp, thuộc tính và quan hệ giữa các lớp trong hệ thống thanh toán.**
