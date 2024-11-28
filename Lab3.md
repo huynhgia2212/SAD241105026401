@@ -63,8 +63,14 @@
   #### **2. Analysis class to design element map**
   **Ánh xạ các lớp phân tích của PrintService đến các phần tử thiết kế**
 
- - Lớp Phân tích (PrintService): PrintJob/Printer/Document/PrintQueue/PrintController
+ - Lớp phân tích (PrintService): PrintJob/Printer/Document/PrintQueue/PrintController
   
- - Phần tử Thiết kế: PrintJob/HPPrinter, EpsonPrinter/PDFDocument, WordDocument, ImageDocument/PriorityQueue/PrintController
+ - Phần tử thiết kế: PrintJob/HPPrinter, EpsonPrinter/PDFDocument, WordDocument, ImageDocument/PriorityQueue/PrintController
+
+**Ánh xạ các lớp phân tích của ProjectManagementDatabase đến các phần tử thiết kế**
+
+- Lớp phân tích: Project/Task/User/Resource
+
+- Phần tử thiết kế: Project/Task/User/Resource
            
    
