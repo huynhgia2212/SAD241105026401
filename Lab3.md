@@ -59,4 +59,12 @@
 - Theo dõi tiến độ: Cập nhật tiến độ hoàn thành của các công việc.
 - Quản lý tài nguyên: Thêm, xóa, cập nhật thông tin về các tài nguyên được sử dụng trong dự án.
 - Quản lý người dùng: Thêm, xóa, cập nhật thông tin về người dùng, cấp quyền truy cập.
+
+  #### **2. Analysis class to design element map**
+  **Ánh xạ các lớp phân tích của PrintService đến các phần tử thiết kế**
+
+ - Lớp Phân tích (PrintService): PrintJob/Printer/Document/PrintQueue/PrintController
+  
+ - Phần tử Thiết kế: PrintJob/HPPrinter, EpsonPrinter/PDFDocument, WordDocument, ImageDocument/PriorityQueue/PrintController
+           
    
