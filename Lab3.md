@@ -1,6 +1,34 @@
 ### Lab 3. Identify design elements
 #### 1. Subsystem context diagrams
- **1.1 Biểu đồ ngữ cảnh của hệ thống con PrintService:**
+**1.1  Biểu đồ ngữ cảnh của hệ thống con BankSystem.**
+
+![Diagram](https://www.planttext.com/api/plantuml/png/P9112eCm44NtEKMM2bNQRH2HTkMkq1EaCTAWJa8oGdEsBdgaNg49Oj5qDJFC-_D_ydcz6uVSuZoDn8IgX38Sa5wvjteSBnemLcbfLObbgEiTsPuv33VlK4w1KO3Izbp8XDf1RhwxfJTMFtr09Q127rt5GufXdQEgXLxRYQFIGCX_hABU9c3Kpa3DGcKvsOOh0hebEscqKvZnrPNz_0yql4D7cAKPSfASN3MKqMDPdj9r8byfGXe9NVZrBm000F__0m00)
+
+**Mô tả Hệ thống Con BankSystem và Interface của nó**
+
+**Hệ thống con BankSystem là gì?**
+
+- Hệ thống con BankSystem là một phần mềm chuyên dụng, chịu trách nhiệm quản lý các hoạt động liên quan đến ngân hàng, như:
+
+- Quản lý tài khoản: Tạo, cập nhật, xóa tài khoản khách hàng.
+- Quản lý giao dịch: Ghi nhận các giao dịch gửi tiền, rút tiền, chuyển khoản.
+- Tính toán lãi: Tính toán lãi suất cho các loại hình tài khoản khác nhau.
+- Bảo mật thông tin: Bảo vệ thông tin khách hàng và các giao dịch.
+
+**Interface của hệ thống con BankSystem**
+
+- Interface của BankSystem là một tập hợp các phương thức, hàm hoặc lệnh mà các hệ thống khác có thể gọi để tương tác với BankSystem. Nó giống như một "cổng vào" để truy cập vào các chức năng của hệ thống.
+
+**Các phương thức điển hình trong interface của BankSystem:**
+
+- Tạo tài khoản: createAccount(accountNumber, customerName, initialBalance)
+- Rút tiền: withdraw(accountNumber, amount)
+- Gửi tiền: deposit(accountNumber, amount)
+- Chuyển khoản: transfer(fromAccount, toAccount, amount)
+- Kiểm tra số dư: getBalance(accountNumber)
+- Tính lãi: calculateInterest(accountNumber)
+
+ **1.2 Biểu đồ ngữ cảnh của hệ thống con PrintService:**
 
   ![Diagram](https://www.planttext.com/api/plantuml/png/R91D2eCm48NtESKiMsWl82A2tRWBv0IffX0m6PcCfJbR5prIhz34gb3gQdxUl6-6UJzVTM1DFBb1Z2dQpexQCqYodXlqJ3WCXa07aCtFH3kFA4DtsvcijrBz8rGCRDniLr2M4APh-BP6maU4gXB6i-K85-mcb_Ardks6Mdz3SfejUY5a0-SgBogIFSdGhwRKozAc7FJAApRo2HWNQh63FuhCI93jagNUkQGslayl-m000F__0m00)
 
@@ -27,7 +55,7 @@
 - CancelPrintJob(): Hủy bỏ một công việc in đang thực hiện.
   
 
-**1.2 Biểu đồ ngữ cảnh của hệ thống con ProjectManagementDatabase:**
+**1.3 Biểu đồ ngữ cảnh của hệ thống con ProjectManagementDatabase:**
 
    ![Diagram](https://www.planttext.com/api/plantuml/png/Z951QiD034NtSmej6sWkO8m999j03LwaPAqu8ftMdZ4ZXTPdwo97oXKgEHwQKYXTZRxqz2Knry_BYWMJdFlE3VhwrWyO19eKNwcL6WEUgASWwnWanQwZ1CZGrEiV-FONlq710p8PlMtgpT_kzxJ2K9R0vmEFBDJ3aEB725Nb5FGovkuiTyXlENvcIZckVKSiCP0p0fRBwZi51Hnfe71aYC4vFGUqR7iMq2P28PjgK-3Tomk8Eh2pkd5tsBpBNY6RmWyuPugyvkEjkO0dpr8QL2tSP6HEyobPJ_jdCHsMnV-lMMcWt_a5003__mC0)
 
@@ -61,9 +89,15 @@
 - Quản lý người dùng: Thêm, xóa, cập nhật thông tin về người dùng, cấp quyền truy cập.
 
   #### **2. Analysis class to design element map**
+  **Ánh xạ các lớp phân tích của BankSystem đến các phần tử thiết kế**
+  
+  - Lớp phân tích: Customer/Account/Transaction/Employee/Branch
+ 
+  - Phần tử thiết kế: Customer/Account/Transaction/Employee/Branch
+
   **Ánh xạ các lớp phân tích của PrintService đến các phần tử thiết kế**
 
- - Lớp phân tích (PrintService): PrintJob/Printer/Document/PrintQueue/PrintController
+ - Lớp phân tích: PrintJob/Printer/Document/PrintQueue/PrintController
   
  - Phần tử thiết kế: PrintJob/HPPrinter, EpsonPrinter/PDFDocument, WordDocument, ImageDocument/PriorityQueue/PrintController
 
