@@ -40,7 +40,7 @@ Employee views their pay history and remaining vacation time.
 Employee updates their personal information (address, payment method, etc.).
 
 - Alternative Flows:
-- 
+  
 If the employee encounters errors while entering data, they may need to contact the Payroll Administrator for assistance.
 
 If the employee forgets their password, they may need to initiate a password reset process.
@@ -164,3 +164,70 @@ Payroll System generates a paycheck for the employee.
 - Alternative Flows:
 
 If the employee's salary rate changes, the Payroll System may need to update their pay calculations.
+
+### Viết code Java mô phỏng ca sử dụng Maintain Timecard.
+
+**Lớp Employee**
+
+    public class Employee {
+    private int id;
+    private String name;
+    private List<Timecard> timecards;
+
+    public void addTimecard(Timecard timecard) {
+        timecards.add(timecard);
+    }
+    }
+
+    public class Timecard {
+    private Date date;
+    private Time startTime;
+    private Time endTime;
+    private String projectCode;
+
+    
+
+    public double getTotalHours() {
+      
+    }
+
+    public double getOvertimeHours() {
+       
+    }
+    }
+
+**Lớp TimecardSystem**
+
+        import java.util.*;
+
+        public class TimecardSystem {
+        public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        Employee employee = new Employee();
+        employee.setId(1); 1 
+        employee.setName("John Doe");
+
+        while (true) {
+            System.out.println("1. Nhập thông tin chấm công");
+            System.out.println("2. Xem lại thông tin chấm công");
+            System.out.println("3. Thoát");
+
+            int choice = scanner.nextInt();
+
+            switch (choice) {
+                case 1:
+                    Timecard timecard = new Timecard();
+                    System.out.print("Ngày: ");
+                    timecard.setDate(new Date(scanner.nextLong()));
+                    employee.addTimecard(timecard);
+                    break;
+                case 2:
+                   
+                    break;
+                case 3:
+                    System.exit(0);
+            }
+        }
+    }
+}
