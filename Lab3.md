@@ -88,23 +88,57 @@
 - Quản lý tài nguyên: Thêm, xóa, cập nhật thông tin về các tài nguyên được sử dụng trong dự án.
 - Quản lý người dùng: Thêm, xóa, cập nhật thông tin về người dùng, cấp quyền truy cập.
 
-  #### **2. Analysis class to design element map**
-  **Ánh xạ các lớp phân tích của BankSystem đến các phần tử thiết kế**
-  
-  - Lớp phân tích: Customer/Account/Transaction/Employee/Branch
- 
-  - Phần tử thiết kế: Customer/Account/Transaction/Employee/Branch
+#### **2.Analysis class to design element map**
 
-  **Ánh xạ các lớp phân tích của PrintService đến các phần tử thiết kế**
+### Ánh xạ các lớp phân tích đến các phần tử thiết kế.
 
- - Lớp phân tích: PrintJob/Printer/Document/PrintQueue/PrintController
-  
- - Phần tử thiết kế: PrintJob/HPPrinter, EpsonPrinter/PDFDocument, WordDocument, ImageDocument/PriorityQueue/PrintController
+| **Analysis Class**             | **Design Element**              |
+|--------------------------------|---------------------------------|
+| **LoginForm**                  | **LoginForm**                   |
+| **MaintainTimecardForm**       | **MainEmployeeForm**            |
+|                                | **TimecardForm**                |
+|                                |  **MainApplicationForm**        |
+| **TimecardController**         | **TimecardController**          |
+| **SystemClockInterface**       | **SystemClockInterface**        |
+| **PayrollController**          | **PayrollController**           |
+| **Paycheck**                   | **Paycheck**                    |
+| **PaymentInstruction**         | **PaymentInstruction**          |
+| **Employee**                   | **Employee**                    |
+| **IEmployeeRepository**        | **IEmployeeRepository**         |
+| **IPaymentRepository**         | **IPaymentRepository**          |
+| **BankSystem**                 | **BankSystem**                  |
+| **IBankSystem**                | **IBankSystem**                 |
+| **ProjectManagementDatabase**  | **ProjectManagementDatabase**   |
+| **IProjectDatabase**           | **IProjectDatabase**            |
+| **ProjectData**                | **ProjectData**                 |
 
-**Ánh xạ các lớp phân tích của ProjectManagementDatabase đến các phần tử thiết kế**
+#### **3. Design element to owning package map**
 
-- Lớp phân tích: Project/Task/User/Resource
+###  Ánh xạ các phần tử thiết kế vào các gói
 
-- Phần tử thiết kế: Project/Task/User/Resource
+
+| **Design Element**        | **"Owning" Package**                        |
+|---------------------------|--------------------------------------------|
+| **UserInterface**          | Middleware::Presentation::GUI Framework    |
+| **PayrollController**      | Applications::Payroll::BusinessLogic       |
+| **TimecardController**     | Applications::Payroll::BusinessLogic       |
+| **EmployeeRepository**     | DataAccess::Employee::Repository           |
+| **PaymentRepository**      | DataAccess::Payment::Repository            |
+| **Database**               | DataAccess::Database::Connection           |
+| **Paycheck**               | BusinessServices::Payroll::Artifacts       |
+| **PaymentInstruction**     | BusinessServices::Payroll::Artifacts       |
+| **IEmployeeRepository**    | Interfaces::Employee::RepositoryInterface  |
+| **IPaymentRepository**     | Interfaces::Payment::RepositoryInterface   |
+| **IBankSystem**            | Interfaces::Bank::SystemInterface          |
+| **IProjectDatabase**       | Interfaces::Project::DatabaseInterface     |
+| **BankSystem**             | Subsystems::Bank::PaymentProcessing        |
+| **ProjectManagementDatabase** | Subsystems::Project::DatabaseManagement |
+| **ProjectData**            | BusinessServices::Project::DataArtifacts   |
+
+
+#### **4. Architectural layers and their dependencies**
+### Biểu đồ mô tả các layers trong hệ thống và quan hệ giữa chúng. 
+
+![PlanText](https://www.planttext.com/api/plantuml/png/X59BJiCm4Dtx54Cth7g1Bb1_4Pk0AW8769nfCNNioEDKYe2JiU18N04xAKb_KRsnv9dtbN-_VwRiqVcgqE8cfxKo14_9uddsU9yc83Ko2t4BotQYiIR7eaIvnGt1QEM8oNZqoXf8ut047mB2wJbMM3khzS8Q7szoualq3FEA0p4pf7QZv227KyPdv7PAqibeZcQRrUofECFOTvB-0KqGAeBB9NfyHQOZ_VW8CoaR2vV5awBKjgPJuP2BjIeZMzUF8zrqmM-gP76M7CRZpxkZC3215wR1rJxSbSN1i1tkKBIt4V0JoCZa37bimbjneDdi_SSFYq4b5aKCPMj33EjUmEvK7g4jfD6xXjztl0_HGPLPss0L96fPXSP9J4E4-8N_0000__y30000")
            
    
