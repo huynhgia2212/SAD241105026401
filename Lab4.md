@@ -41,6 +41,10 @@
 - Quản trị viên truy cập vào phần quản lý nhân viên.
 - Quản trị viên thêm, sửa hoặc xóa thông tin nhân viên.
 - Hệ thống lưu lại các thay đổi và cập nhật thông tin.
+- Lý do thiết kế:
+- Tính chính xác: Đảm bảo thông tin về nhân viên luôn được cập nhật và chính xác, giúp cho việc tính toán lương và quản lý nhân sự hiệu quả hơn.
+- Quản lý hiệu quả: Dễ dàng theo dõi và quản lý thông tin nhân viên, từ đó hỗ trợ các quyết định về nhân sự và báo cáo.
+- Đảm bảo bảo mật: Chỉ những người có quyền hạn mới có thể truy cập và thay đổi thông tin, bảo vệ dữ liệu nhạy cảm của nhân viên.
 #### 5. In Bảng Lương (Print Payroll)
 - Mục tiêu: In bảng lương đã được tính toán.
 - Người dùng: Quản trị viên.
@@ -48,6 +52,10 @@
 - Quản trị viên chọn bảng lương cần in.
 - Hệ thống kết nối với máy in.
 - Hệ thống in bảng lương cho nhân viên.
+- Lý do thiết kế:
+- Tính minh bạch: Cung cấp cho nhân viên bảng lương chi tiết, giúp họ hiểu rõ về các khoản thanh toán và khấu trừ.
+- Tiện lợi: Cho phép in bảng lương nhanh chóng và dễ dàng, phục vụ cho các nhu cầu lưu trữ và báo cáo.
+- Đảm bảo tuân thủ: Hỗ trợ việc lưu trữ và cung cấp thông tin cần thiết cho các yêu cầu pháp lý và kiểm toán.
 #### 6. Truy Xuất Thông Tin Bảng Lương (Access Payroll Information)
 - Mục tiêu: Cho phép nhân viên truy cập thông tin bảng lương của họ.
 - Người dùng: Nhân viên.
@@ -55,6 +63,10 @@
 - Nhân viên đăng nhập vào hệ thống.
 - Nhân viên chọn tùy chọn truy cập thông tin bảng lương.
 - Hệ thống hiển thị thông tin bảng lương hiện tại và lịch sử bảng lương.
+- Lý do thiết kế:
+- Dễ dàng truy cập: Giúp người dùng nhanh chóng lấy thông tin cần thiết mà không phải tìm kiếm thủ công, tiết kiệm thời gian.
+- Hỗ trợ ra quyết định: Cung cấp dữ liệu cần thiết cho việc phân tích và ra quyết định liên quan đến chi phí lao động và hiệu suất làm việc.
+- Tính linh hoạt: Cho phép người dùng tùy chỉnh truy xuất thông tin theo nhu cầu cụ thể, giúp cải thiện khả năng báo cáo và phân tích.
 
 #### Biểu đồ ca sử dụng
 ![Diagram](https://www.planttext.com/api/plantuml/png/R96_IWD14CRxVOhX-XJcNodHA284KJp5ThbRxnRsviBkNh68bOMjBo0OnKOKBAno18iBUOzx0b_1IJWb6xBTD_FxlXbcVyhlWR5Sso9JJ8bh2pO7BPFKGYorYApCaV78vXeEix7AdH2Dt8ipYOmj6Ow94X2SSgTpfU3S6Iko06uOq2kCYBYXzlnXVeS9dAJrz6CS03TmCTpnaOF2GQYhTmZJkdoKS2GvmgXwok1IrkLzrBZQlcj8YHC7-_NqXV97Yy_519C6xVZeMR64A7968welmaE9j5BrZ3IYUiF6rlLjnxWzlUTZeQRzhsZ4grsFtshjirl6_auAhTRkwXeRXVPceSzMP__drrN7KrrFzTX0O4n__0i00F__0m00)
